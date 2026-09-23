@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PROSEN Boutique — Smartphones, accessoires, promotions et commande WhatsApp au Sénégal.">
+  <title>PROSEN Boutique — Smartphones & Accessoires</title>
+  <meta name="theme-color" content="#0c1118">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.prosenboutique.com/">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PROSEN Boutique">
+  <meta property="og:title" content="PROSEN Boutique — Smartphones & Accessoires">
+  <meta property="og:description" content="Découvrez les smartphones et accessoires PROSEN au Sénégal. Commande rapide par WhatsApp.">
+  <meta property="og:url" content="https://www.prosenboutique.com/">
+  <meta property="og:image" content="https://www.prosenboutique.com/images/prosen-cover.jpg">
+  <meta property="og:image:secure_url" content="https://www.prosenboutique.com/images/prosen-cover.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PROSEN Boutique — Smartphones & Accessoires">
+  <meta name="twitter:description" content="Smartphones, accessoires et commande WhatsApp au Sénégal.">
+  <meta name="twitter:image" content="https://www.prosenboutique.com/images/prosen-cover.jpg">
+  <style>
+    :root{
+      --yellow:#ffd000;
+      --yellow-dark:#f3bd00;
+      --black:#0c1118;
+      --black-2:#151b24;
+      --text:#111827;
+      --muted:#6b7280;
+      --soft:#f5f7fa;
+      --white:#fff;
+      --green:#20c76a;
+      --border:#e7ebf0;
+      --shadow:0 12px 35px rgba(12,17,24,.08);
+      --radius:18px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.5;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    button{font:inherit}
+
+    .topbar{
+      background:var(--black);
+      color:#e8edf3;
+      font-size:12px;
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:auto;
+      min-height:34px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:0 18px;
+    }
+    .topbar span{opacity:.9}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(12,17,24,.97);
+      color:white;
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      max-width:var(--max);
+      min-height:72px;
+      margin:auto;
+      padding:0 18px;
+      display:flex;
+      align-items:center;
+      gap:28px;
+    }
+    .logo{
+      font-size:26px;
+      font-weight:900;
+      letter-spacing:-1.5px;
+      white-space:nowrap;
+    }
+    .logo span{color:var(--yellow)}
+    .nav-links{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:30px;
+      flex:1;
+      font-weight:700;
+      font-size:14px;
+    }
+    .nav-links a{opacity:.9}
+    .nav-links a:hover,.nav-links a.active{color:var(--yellow)}
+    .nav-actions{display:flex;align-items:center;gap:12px}
+    .icon-btn{
+      border:0;
+      background:transparent;
+      color:white;
+      cursor:pointer;
+      font-size:19px;
+      width:34px;height:34px;
+    }
+    .whatsapp-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:var(--yellow);
+      color:#111;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      border:0;
+      cursor:pointer;
+    }
+
+    .hero{
+      background:
+        radial-gradient(circle at 78% 44%, rgba(255,208,0,.18), transparent 30%),
+        linear-gradient(120deg,#fff 0%,#f7f8fa 58%,#fff8ce 100%);
+      overflow:hidden;
+    }
+    .hero-inner{
+      max-width:var(--max);
+      min-height:470px;
+      margin:auto;
+      padding:70px 18px 52px;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:30px;
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:#17202e;
+      color:var(--yellow);
+      padding:9px 14px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.2px;
+    }
+    .hero h1{
+      margin-top:22px;
+      font-size:clamp(48px,6vw,78px);
+      line-height:.95;
+      letter-spacing:-4px;
+      max-width:620px;
+    }
+    .hero h1 span{color:var(--yellow)}
+    .hero p{
+      margin:24px 0;
+      max-width:570px;
+      color:#5f6875;
+      font-size:17px;
+    }
+    .hero-buttons{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      min-height:48px;
+      padding:0 20px;
+      border-radius:13px;
+      font-weight:900;
+      border:1px solid transparent;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--yellow);color:#111}
+    .btn-outline{background:white;border-color:#aeb6c2;color:#111}
+    .trust{
+      margin-top:30px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:24px;
+    }
+    .trust-item{display:flex;gap:9px;align-items:center;font-size:12px}
+    .trust-icon{
+      width:32px;height:32px;
+      border-radius:50%;
+      display:grid;place-items:center;
+      background:#fff3b0;
+    }
+    .trust strong{display:block;font-size:13px}
+    .trust small{color:var(--muted)}
+
+    .hero-visual{
+      min-height:390px;
+      position:relative;
+      display:grid;
+      place-items:center;
+    }
+    .yellow-shape{
+      position:absolute;
+      width:470px;height:310px;
+      background:linear-gradient(135deg,#ffd000,#ffe982);
+      border-radius:42% 58% 45% 55%;
+      transform:rotate(-8deg);
+      right:0;
+    }
+    .phone-stage{
+      position:relative;
+      z-index:2;
+      display:flex;
+      align-items:end;
+      justify-content:center;
+      gap:-10px;
+    }
+    .phone{
+      width:150px;height:285px;
+      border:9px solid #10151d;
+      border-radius:31px;
+      background:linear-gradient(150deg,#59677d,#101827 70%);
+      box-shadow:0 25px 40px rgba(0,0,0,.3);
+      position:relative;
+      transform:rotate(-7deg);
+    }
+    .phone:nth-child(2){transform:translateY(-18px) rotate(1deg);z-index:3;background:linear-gradient(150deg,#2f3540,#0a0d13)}
+    .phone:nth-child(3){transform:rotate(8deg);background:linear-gradient(150deg,#e8e9ea,#252c36)}
+    .camera{
+      position:absolute;top:14px;left:14px;
+      width:48px;height:60px;border-radius:12px;background:#0a0d13;
+    }
+    .camera:before,.camera:after{
+      content:"";position:absolute;width:17px;height:17px;border-radius:50%;background:#364358;border:3px solid #0b0f15;
+      left:7px;top:7px;
+    }
+    .camera:after{top:31px}
+    .phone-brand{
+      position:absolute;bottom:45px;width:100%;text-align:center;
+      color:white;font-weight:900;letter-spacing:4px;font-size:13px;
+    }
+    .floating-badge{
+      position:absolute;z-index:4;background:white;
+      box-shadow:var(--shadow);border-radius:14px;padding:13px 17px;
+      font-weight:900;font-size:13px;
+    }
+    .badge-one{top:58px;left:10px}
+    .badge-two{bottom:50px;right:5px}
+
+    .section{padding:55px 18px}
+    .section.alt{background:var(--soft)}
+    .section-inner{max-width:var(--max);margin:auto}
+    .section-head{
+      display:flex;align-items:end;justify-content:space-between;
+      gap:20px;margin-bottom:22px
+    }
+    .section-kicker{
+      color:#d7a900;text-transform:uppercase;font-size:12px;font-weight:900;
+      letter-spacing:.6px
+    }
+    .section-title{font-size:30px;line-height:1.1;letter-spacing:-1px}
+    .section-sub{color:var(--muted);font-size:14px;margin-top:6px}
+    .view-all{color:#c49700;font-weight:900;font-size:13px}
+
+    .categories{
+      display:grid;
+      grid-template-columns:repeat(8,1fr);
+      gap:12px;
+    }
+    .category{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:15px;
+      min-height:115px;
+      padding:14px 8px;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:10px;
+      font-weight:800;
+      font-size:12px;
+      transition:.2s;
+    }
+    .category:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+    .category-icon{font-size:34px}
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+    .product{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:12px;
+      position:relative;
+      box-shadow:0 5px 20px rgba(12,17,24,.04);
+    }
+    .discount{
+      position:absolute;top:10px;left:10px;
+      background:#ff3b30;color:#fff;border-radius:999px;
+      padding:4px 7px;font-size:10px;font-weight:900;
+    }
+    .product-img{
+      height:180px;
+      border-radius:12px;
+      background:#f6f7f9;
+      display:grid;place-items:center;
+      margin-bottom:12px;
+      overflow:hidden;
+    }
+    .product-img img{width:100%;height:100%;object-fit:contain}
+    .product h3{font-size:13px;line-height:1.3;min-height:35px}
+    .stars{color:#ffbf00;font-size:12px;margin:6px 0}
+    .old{text-decoration:line-through;color:#9ca3af;font-size:11px}
+    .price{color:#e36f00;font-size:16px;font-weight:950}
+    .stock{color:#16a34a;font-size:11px;margin:3px 0 10px}
+    .product .btn{width:100%;min-height:36px;font-size:11px;padding:0 8px;margin-top:5px}
+
+    .sale{
+      margin-top:16px;
+      border-radius:18px;
+      padding:20px 24px;
+      background:linear-gradient(100deg,#0a1018,#172231);
+      color:white;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      align-items:center;
+      gap:20px;
+      overflow:hidden;
+    }
+    .sale h3{font-size:28px}
+    .sale h3 span{color:var(--yellow)}
+    .countdown{display:flex;gap:8px;justify-content:flex-end}
+    .count{
+      min-width:58px;text-align:center;
+      background:#222d3c;border-radius:9px;padding:8px 5px;
+    }
+    .count strong{display:block;font-size:18px}
+    .count small{font-size:9px;color:#b8c0ca}
+
+    .services{
+      display:grid;grid-template-columns:repeat(5,1fr);gap:14px
+    }
+    .service{
+      display:flex;gap:10px;align-items:flex-start;
+      padding:15px 0
+    }
+    .service-icon{
+      width:40px;height:40px;flex:0 0 40px;
+      border-radius:50%;display:grid;place-items:center;
+      background:#fff2ad
+    }
+    .service h4{font-size:13px}
+    .service p{font-size:11px;color:var(--muted);margin-top:2px}
+
+    .contact-strip{
+      background:#fff7c8;
+      padding:22px 18px;
+    }
+    .contact-inner{
+      max-width:var(--max);margin:auto;
+      display:flex;justify-content:space-between;align-items:center;gap:20px
+    }
+    .contact-inner h3{font-size:22px}
+    .numbers{font-weight:900}
+    .numbers span{margin-right:15px}
+
+    footer{
+      background:var(--black);
+      color:#d9e0e8;
+      padding:45px 18px 22px;
+    }
+    .footer-grid{
+      max-width:var(--max);margin:auto;
+      display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px
+    }
+    footer h4{color:#fff;margin-bottom:14px}
+    footer a,footer p{font-size:12px;color:#aeb8c4;display:block;margin:7px 0}
+    .footer-logo{font-size:22px;font-weight:950;color:#fff}
+    .footer-logo span{color:var(--yellow)}
+    .socials{display:flex;gap:8px;margin-top:15px}
+    .socials a{
+      width:34px;height:34px;border:1px solid #394352;border-radius:50%;
+      display:grid;place-items:center;color:white;margin:0
+    }
+    .footer-bottom{
+      max-width:var(--max);margin:30px auto 0;padding-top:18px;
+      border-top:1px solid #27313d;display:flex;justify-content:space-between;
+      gap:20px;font-size:11px;color:#7f8995
+    }
+
+    .floating-whatsapp{
+      position:fixed;right:20px;bottom:20px;z-index:100;
+      width:58px;height:58px;border-radius:50%;
+      background:var(--green);color:#fff;display:grid;place-items:center;
+      font-size:28px;box-shadow:0 10px 30px rgba(0,0,0,.2)
+    }
+
+    @media(max-width:1050px){
+      .nav-links{gap:16px}
+      .categories{grid-template-columns:repeat(4,1fr)}
+      .products{grid-template-columns:repeat(3,1fr)}
+      .services{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:760px){
+      .topbar-inner{justify-content:center}
+      .topbar-inner span:nth-child(n+2){display:none}
+      .nav{min-height:64px}
+      .nav-links{display:none}
+      .logo{font-size:22px}
+      .nav-actions .icon-btn{display:none}
+      .hero-inner{grid-template-columns:1fr;padding-top:48px}
+      .hero h1{font-size:52px;letter-spacing:-3px}
+      .hero-visual{min-height:330px}
+      .yellow-shape{width:370px;height:250px}
+      .phone{width:110px;height:220px}
+      .camera{transform:scale(.8);transform-origin:top left}
+      .phone-brand{font-size:10px}
+      .section{padding:42px 14px}
+      .section-head{align-items:start;flex-direction:column}
+      .categories{grid-template-columns:repeat(4,1fr)}
+      .products{grid-template-columns:repeat(2,1fr)}
+      .services{grid-template-columns:1fr 1fr}
+      .sale{grid-template-columns:1fr}
+      .countdown{justify-content:flex-start}
+      .contact-inner{align-items:flex-start;flex-direction:column}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .footer-bottom{flex-direction:column}
+    }
+    @media(max-width:430px){
+      .whatsapp-btn{padding:10px 12px;font-size:12px}
+      .hero h1{font-size:43px}
+      .hero p{font-size:15px}
+      .categories{grid-template-columns:repeat(2,1fr)}
+      .products{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr}
+      .trust{gap:14px}
+      .floating-whatsapp{right:14px;bottom:14px}
+    }
+  
+    .brand-toolbar{
+      display:flex; flex-wrap:wrap; gap:10px; margin:24px 0 30px;
+      position:sticky; top:82px; z-index:20; padding:10px;
+      background:rgba(255,255,255,.94); backdrop-filter:blur(10px);
+      border:1px solid var(--border); border-radius:16px;
+    }
+    .brand-filter{
+      border:1px solid var(--border); background:#fff; color:#111827;
+      padding:10px 16px; border-radius:999px; font-weight:800; cursor:pointer;
+    }
+    .brand-filter.active,.brand-filter:hover{background:var(--black);color:var(--yellow);border-color:var(--black)}
+    .brand-block{margin-top:38px}
+    .brand-title{
+      display:flex; align-items:center; justify-content:space-between; gap:15px;
+      margin-bottom:16px; padding-bottom:10px; border-bottom:1px solid var(--border);
+    }
+    .brand-title h3{font-size:24px; letter-spacing:-.6px}
+    .brand-title span{font-size:12px;color:var(--muted);font-weight:700}
+    .brand-models{
+      display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px;
+    }
+    .model-chip{
+      background:#f0f3f7; border:1px solid #e1e6ec; color:#303846;
+      padding:7px 10px; border-radius:9px; font-size:12px; font-weight:800;
+    }
+    .model-chip.new{background:#fff3b0;border-color:#ffd000;color:#111}
+    .brand-products{
+      display:grid; grid-template-columns:repeat(4,1fr); gap:18px;
+    }
+    .brand-card{
+      background:#fff; border:1px solid var(--border); border-radius:16px;
+      padding:14px; box-shadow:var(--shadow);
+    }
+    .brand-card .product-img{height:190px}
+    .brand-card h4{font-size:15px;margin:12px 0 6px}
+    .brand-card .price{margin-top:8px}
+    .brand-note{font-size:11px;color:var(--muted);margin:7px 0 12px}
+    @media(max-width:900px){.brand-products{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){
+      .brand-products{grid-template-columns:1fr}
+      .brand-toolbar{top:70px}
+    }
+
+  </style>
+
+<style>
+.whatsapp-logo {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: middle;
+  flex: 0 0 auto;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+</style>
+
+
+<style>
+.cart-btn{position:relative;display:inline-flex;align-items:center;gap:7px;border:0;background:#f5c400;color:#111;padding:10px 14px;border-radius:12px;font-weight:800;cursor:pointer;text-decoration:none}
+.cart-count{min-width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#111;color:#fff;font-size:12px}
+.cart-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:9998;display:none}
+.cart-overlay.open{display:block}
+.cart-drawer{position:fixed;right:0;top:0;height:100vh;width:min(420px,94vw);background:#fff;z-index:9999;box-shadow:-10px 0 35px rgba(0,0,0,.2);transform:translateX(105%);transition:.25s;display:flex;flex-direction:column}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{padding:20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eee}.cart-head h3{margin:0}.cart-close{border:0;background:#f1f1f1;border-radius:10px;width:38px;height:38px;font-size:20px;cursor:pointer}
+.cart-items{padding:16px;overflow:auto;flex:1}.cart-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #eee}.cart-item img{width:64px;height:64px;object-fit:cover;border-radius:10px}.cart-item-info{flex:1}.cart-item-info strong{display:block;margin-bottom:5px}.cart-remove{border:0;background:none;color:#c00;cursor:pointer;font-size:12px}.cart-empty{text-align:center;color:#777;padding:45px 15px}.cart-foot{padding:18px;border-top:1px solid #eee}.cart-total{display:flex;justify-content:space-between;font-size:18px;font-weight:800;margin-bottom:12px}.add-cart{margin-top:9px;width:100%;border:1px solid #f5c400;background:#fff7cf;color:#111;border-radius:10px;padding:9px 12px;font-weight:800;cursor:pointer}.add-cart:hover{background:#f5c400}
+@media(max-width:700px){.cart-btn{padding:8px 10px}.cart-label{display:none}}
+</style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>🚚 Livraison rapide partout au Sénégal</span>
+      <span>💳 Paiement à la livraison</span>
+      <span>🎧 Service client 7j/7</span>
+      <span>🇸🇳 FR</span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="nav">
+      <a href="#" class="logo">PRO<span>SEN</span> Boutique</a>
+
+      <div class="nav-links">
+        <a class="active" href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" type="button" aria-label="Rechercher" title="Rechercher">⌕</button>
+        <button class="icon-btn" aria-label="Compte">♙</button>
+        <button class="icon-btn" id="openCart" aria-label="Ouvrir le panier" title="Panier">🛒 <span class="cart-count" id="cartCount">0</span></button>
+        <a class="whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%20Boutique%20%F0%9F%91%8B%20Je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener"><svg class="whatsapp-logo" viewBox="0 0 32 32" aria-label="WhatsApp" role="img">
+  <circle cx="16" cy="16" r="15" fill="#25D366"/>
+  <path fill="#fff" d="M23.4 8.6A10.4 10.4 0 0 0 7.2 21.1L5.9 26l5-1.3A10.4 10.4 0 1 0 23.4 8.6Zm-7.3 15.2c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.7 8.7 0 1 1 7.2 3.8Zm4.8-6.5c-.3-.2-1.8-.9-2-.9-.3-.1-.5-.1-.7.2l-.9 1.1c-.2.2-.4.2-.7.1-1.9-.9-3.1-1.7-4.3-3.8-.2-.3 0-.5.2-.7l.5-.6c.2-.2.2-.4.3-.6 0-.2 0-.4-.1-.6l-.9-2.1c-.2-.5-.4-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.5-.1-.1-.3-.2-.6-.3Z"/>
+</svg> WhatsApp</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">📱 Smartphones & accessoires</div>
+          <h1>Ton prochain <span>smartphone.</span></h1>
+          <p>
+            Chez PROSEN, découvrez les derniers smartphones, accessoires et nouveautés
+            au meilleur prix. Qualité, conseil et service rapide.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#produits">🛒 Acheter maintenant →</a>
+            <a class="btn btn-outline" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%20Boutique%20%F0%9F%91%8B%20Je%20voudrais%20passer%20une%20commande." target="_blank" rel="noopener">💬 Commander sur WhatsApp</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">
+              <div class="trust-icon">🛡️</div>
+              <div><strong>Produits garantis</strong><small>100% authentiques</small></div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🚚</div>
+              <div><strong>Livraison rapide</strong><small>Partout au Sénégal</small></div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon">🎧</div>
+              <div><strong>Service client</strong><small>Toujours à votre écoute</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Présentation smartphones">
+          <div class="yellow-shape"></div>
+          <div class="floating-badge badge-one">🔥 Nouveautés</div>
+          <div class="phone-stage">
+            <div class="phone"><div class="camera"></div><div class="phone-brand">PROSEN</div></div>
+            <div class="phone"><div class="camera"></div><div class="phone-brand">PROSEN</div></div>
+            <div class="phone"><div class="camera"></div><div class="phone-brand">PROSEN</div></div>
+          </div>
+          <div class="floating-badge badge-two">⭐ Qualité & conseil</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Catégories</div>
+            <h2 class="section-title">Nos catégories</h2>
+            <p class="section-sub">Trouvez facilement ce que vous cherchez.</p>
+          </div>
+          <a class="view-all" href="#produits">Voir toutes les catégories →</a>
+        </div>
+
+        <div class="categories">
+          <a class="category" href="#produits"><div class="category-icon">📱</div>Smartphones</a>
+          <a class="category" href="#produits"><div class="category-icon">🍎</div>iPhone</a>
+          <a class="category" href="#produits"><div class="category-icon">🎧</div>Accessoires</a>
+          <a class="category" href="#produits"><div class="category-icon">🎵</div>Écouteurs</a>
+          <a class="category" href="#produits"><div class="category-icon">🔌</div>Chargeurs</a>
+          <a class="category" href="#produits"><div class="category-icon">🧩</div>Coques</a>
+          <a class="category" href="#produits"><div class="category-icon">⌚</div>Montres</a>
+          <a class="category" href="#produits"><div class="category-icon">➕</div>Autres</a>
+        </div>
+      </div>
+    </section>
+
+    
+<section class="section alt" id="produits">
+  <div class="section-inner">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Catalogue smartphones</div>
+        <h2 class="section-title">Choisissez par marque et par modèle</h2>
+        <p class="section-sub">PROSEN organise les téléphones par marque, des générations précédentes aux modèles les plus récents.</p>
+      </div>
+    </div>
+
+    <div class="brand-toolbar" id="brandToolbar">
+      <button class="brand-filter active" data-brand="all">Toutes les marques</button>
+      <button class="brand-filter" data-brand="apple">Apple / iPhone</button>
+      <button class="brand-filter" data-brand="samsung">Samsung</button>
+      <button class="brand-filter" data-brand="xiaomi">Xiaomi / Redmi</button>
+      <button class="brand-filter" data-brand="tecno">TECNO</button>
+      <button class="brand-filter" data-brand="infinix">Infinix</button>
+      <button class="brand-filter" data-brand="oppo">OPPO</button>
+      <button class="brand-filter" data-brand="google">Google Pixel</button>
+      <button class="brand-filter" data-brand="accessoires">Accessoires</button>
+    </div>
+
+    <div class="brand-block" data-brand-section="apple">
+      <div class="brand-title"><h3>🍎 Apple — iPhone</h3><span>Du classique au plus récent</span></div>
+      <div class="brand-models">
+        <button type="button" class="model-chip new" data-model="iPhone Duo">iPhone Duo</button>
+        <button type="button" class="model-chip new" data-model="iPhone 18 Pro Max">iPhone 18 Pro Max</button>
+        <button type="button" class="model-chip new" data-model="iPhone 18 Pro">iPhone 18 Pro</button>
+        <button type="button" class="model-chip new" data-model="iPhone Air">iPhone Air</button>
+        <button type="button" class="model-chip" data-model="iPhone 17">iPhone 17</button><button type="button" class="model-chip" data-model="iPhone 17e">iPhone 17e</button>
+        <button type="button" class="model-chip" data-model="iPhone 16">iPhone 16</button><button type="button" class="model-chip" data-model="iPhone 16 Pro Max">iPhone 16 Pro Max</button>
+        <button type="button" class="model-chip" data-model="iPhone 16 Pro">iPhone 16 Pro</button><button type="button" class="model-chip" data-model="iPhone 15">iPhone 15</button>
+        <button type="button" class="model-chip" data-model="iPhone 15 Pro Max">iPhone 15 Pro Max</button><button type="button" class="model-chip" data-model="iPhone 15 Pro">iPhone 15 Pro</button>
+        <button type="button" class="model-chip" data-model="iPhone 14">iPhone 14</button><button type="button" class="model-chip" data-model="iPhone 14 Pro Max">iPhone 14 Pro Max</button>
+        <button type="button" class="model-chip" data-model="iPhone 13">iPhone 13</button><button type="button" class="model-chip" data-model="iPhone 13 Pro Max">iPhone 13 Pro Max</button>
+        <button type="button" class="model-chip" data-model="iPhone 12">iPhone 12</button><button type="button" class="model-chip" data-model="iPhone 11">iPhone 11</button>
+      </div>
+      <div class="brand-products">
+        <article class="brand-card">
+          <div class="product-img"><img src="images/iphone-18-pro-max.jpg"" alt="iPhone 18 Pro Max"></div>
+          <h4>iPhone 18 Pro Max</h4><div class="stock">● Sur commande</div>
+          <div class="price">Prix sur demande</div><div class="brand-note">256 Go • 512 Go • 1 To • 2 To</div>
+          <a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20veux%20le%20prix%20de%20l%27iPhone%2018%20Pro%20Max." target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="add-cart" data-product="iPhone 18 Pro Max" data-image="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card">
+          <div class="product-img"><img src="images/iphone-18-pro.jpg"" alt="iPhone 18 Pro"></div>
+          <h4>iPhone 18 Pro</h4><div class="stock">● Sur commande</div>
+          <div class="price">Prix sur demande</div><div class="brand-note">256 Go • 512 Go • 1 To • 2 To</div>
+          <a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20veux%20le%20prix%20de%20l%27iPhone%2018%20Pro." target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="add-cart" data-product="iPhone 18 Pro" data-image="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card">
+          <div class="product-img"><img src="images/iphone-17.jpg"" alt="iPhone 17"></div>
+          <h4>iPhone 17</h4><div class="stock">● Sur commande</div>
+          <div class="price">Prix sur demande</div><div class="brand-note">Disponible selon arrivage</div>
+          <a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20veux%20le%20prix%20de%20l%27iPhone%2017." target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="add-cart" data-product="iPhone 17" data-image="https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card">
+          <div class="product-img"><img src="images/iphone-15-pro-max.jpg"" alt="iPhone 15 Pro Max"></div>
+          <h4>iPhone 15 Pro Max</h4><div class="stock">● Sur commande</div>
+          <div class="price">Prix sur demande</div><div class="brand-note">Plusieurs capacités</div>
+          <a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20veux%20le%20prix%20de%20l%27iPhone%2015%20Pro%20Max." target="_blank" rel="noopener">WhatsApp</a>
+        <button type="button" class="add-cart" data-product="iPhone 15 Pro Max" data-image="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="samsung">
+      <div class="brand-title"><h3>📱 Samsung Galaxy</h3><span>S • A • Z • Note</span></div>
+      <div class="brand-models">
+        <button type="button" class="model-chip new" data-model="Galaxy S26 Ultra">Galaxy S26 Ultra</button><button type="button" class="model-chip new" data-model="Galaxy S26+">Galaxy S26+</button><button type="button" class="model-chip new" data-model="Galaxy S26">Galaxy S26</button>
+        <button type="button" class="model-chip" data-model="Galaxy S25 Ultra">Galaxy S25 Ultra</button><button type="button" class="model-chip" data-model="Galaxy S25+">Galaxy S25+</button><button type="button" class="model-chip" data-model="Galaxy S25">Galaxy S25</button>
+        <button type="button" class="model-chip" data-model="Galaxy S24 Ultra">Galaxy S24 Ultra</button><button type="button" class="model-chip" data-model="Galaxy S24+">Galaxy S24+</button><button type="button" class="model-chip" data-model="Galaxy S24">Galaxy S24</button>
+        <button type="button" class="model-chip" data-model="Galaxy A57">Galaxy A57</button><button type="button" class="model-chip" data-model="Galaxy A37">Galaxy A37</button><button type="button" class="model-chip" data-model="Galaxy A26">Galaxy A26</button>
+        <button type="button" class="model-chip" data-model="Galaxy Z Fold">Galaxy Z Fold</button><button type="button" class="model-chip" data-model="Galaxy Z Flip">Galaxy Z Flip</button>
+      </div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/samsung-galaxy-s26-ultra.jpg"" alt="Samsung Galaxy S26 Ultra"></div><h4>Galaxy S26 Ultra</h4><div class="stock">● Sur commande</div><div class="price">Prix sur demande</div><div class="brand-note">256 Go • 512 Go • 1 To</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20prix%20Galaxy%20S26%20Ultra." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Galaxy S26 Ultra" data-image="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/samsung-galaxy-s26.jpg"" alt="Samsung Galaxy S26"></div><h4>Galaxy S26 / S26+</h4><div class="stock">● Sur commande</div><div class="price">Prix sur demande</div><div class="brand-note">Gamme Galaxy S26</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20prix%20Galaxy%20S26%20ou%20S26%2B." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Galaxy S26 / S26+" data-image="https://images.unsplash.com/photo-1610945264803-cf45a10a8b5f?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/samsung-galaxy-s24-ultra.jpg"" alt="Samsung Galaxy S24 Ultra"></div><h4>Galaxy S24 Ultra</h4><div class="stock">● Sur commande</div><div class="price">Prix sur demande</div><div class="brand-note">Plusieurs capacités</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20prix%20Galaxy%20S24%20Ultra." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Galaxy S24 Ultra" data-image="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/samsung-galaxy-a.jpg"" alt="Samsung Galaxy A"></div><h4>Galaxy A — Série</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">A26 • A37 • A57</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Samsung%20Galaxy%20A." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Galaxy A — Série" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="xiaomi">
+      <div class="brand-title"><h3>🟠 Xiaomi & Redmi</h3><span>Flagship, Redmi Note et entrée de gamme</span></div>
+      <div class="brand-models">
+        <button type="button" class="model-chip new" data-model="Xiaomi 17 Ultra">Xiaomi 17 Ultra</button><button type="button" class="model-chip new" data-model="Xiaomi 17">Xiaomi 17</button>
+        <button type="button" class="model-chip" data-model="Xiaomi 15">Xiaomi 15</button><button type="button" class="model-chip" data-model="Xiaomi 14">Xiaomi 14</button>
+        <button type="button" class="model-chip" data-model="Redmi Note 15 Pro+">Redmi Note 15 Pro+</button><button type="button" class="model-chip" data-model="Redmi Note 15 Pro">Redmi Note 15 Pro</button>
+        <button type="button" class="model-chip" data-model="Redmi Note 14">Redmi Note 14</button><button type="button" class="model-chip" data-model="Redmi Note 13">Redmi Note 13</button><button type="button" class="model-chip" data-model="Redmi 14C">Redmi 14C</button>
+      </div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/xiaomi-17.jpg"" alt="Xiaomi 17"></div><h4>Xiaomi 17</h4><div class="stock">● Sur commande</div><div class="price">Prix sur demande</div><div class="brand-note">12 Go + 256/512 Go</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20prix%20Xiaomi%2017." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Xiaomi 17" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/xiaomi-17-ultra.jpg"" alt="Xiaomi 17 Ultra"></div><h4>Xiaomi 17 Ultra</h4><div class="stock">● Sur commande</div><div class="price">Prix sur demande</div><div class="brand-note">Gamme flagship</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20prix%20Xiaomi%2017%20Ultra." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Xiaomi 17 Ultra" data-image="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/redmi-note-15.jpg"" alt="Redmi Note 15"></div><h4>Redmi Note 15</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Série Redmi Note</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20prix%20Redmi%20Note%2015." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Redmi Note 15" data-image="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/redmi.jpg"" alt="Redmi"></div><h4>Redmi — autres modèles</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Note • Redmi • C Series</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Redmi." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Redmi — autres modèles" data-image="https://images.unsplash.com/photo-1607936854279-55e8e5f2f7a5?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="tecno">
+      <div class="brand-title"><h3>🔵 TECNO</h3><span>Phantom • Camon • Spark • Pova</span></div>
+      <div class="brand-models">
+        <button type="button" class="model-chip" data-model="PHANTOM">PHANTOM</button><button type="button" class="model-chip" data-model="CAMON">CAMON</button><button type="button" class="model-chip" data-model="SPARK">SPARK</button><button type="button" class="model-chip" data-model="POVA">POVA</button>
+      </div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/tecno-phantom.jpg"" alt="TECNO Phantom"></div><h4>TECNO PHANTOM</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gamme premium</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20TECNO%20PHANTOM." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="TECNO PHANTOM" data-image="https://images.unsplash.com/photo-1592286927505-1def25115558?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/tecno-camon.jpg"" alt="TECNO Camon"></div><h4>TECNO CAMON</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Photo & vidéo</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20TECNO%20CAMON." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="TECNO CAMON" data-image="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/tecno-spark.jpg"" alt="TECNO Spark"></div><h4>TECNO SPARK</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Rapport qualité/prix</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20TECNO%20SPARK." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="TECNO SPARK" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/tecno-pova.jpg"" alt="TECNO Pova"></div><h4>TECNO POVA</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gaming & autonomie</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20TECNO%20POVA." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="TECNO POVA" data-image="https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="infinix">
+      <div class="brand-title"><h3>⚡ Infinix</h3><span>ZERO • NOTE • HOT • GT</span></div>
+      <div class="brand-models"><button type="button" class="model-chip" data-model="ZERO">ZERO</button><button type="button" class="model-chip" data-model="NOTE">NOTE</button><button type="button" class="model-chip" data-model="HOT">HOT</button><button type="button" class="model-chip" data-model="GT">GT</button></div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/infinix-zero.jpg"" alt="Infinix Zero"></div><h4>Infinix ZERO</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gamme premium</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Infinix%20ZERO." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Infinix ZERO" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/infinix-note.jpg"" alt="Infinix Note"></div><h4>Infinix NOTE</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Grand écran & autonomie</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Infinix%20NOTE." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Infinix NOTE" data-image="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/infinix-gt.jpg"" alt="Infinix GT"></div><h4>Infinix GT</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gaming</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Infinix%20GT." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Infinix GT" data-image="https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="oppo">
+      <div class="brand-title"><h3>🟢 OPPO</h3><span>Find • Reno • A</span></div>
+      <div class="brand-models"><button type="button" class="model-chip" data-model="Find X">Find X</button><button type="button" class="model-chip" data-model="Reno">Reno</button><button type="button" class="model-chip" data-model="A Series">A Series</button></div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/oppo-find-x.jpg"" alt="OPPO Find X"></div><h4>OPPO Find X</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gamme premium</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20OPPO%20Find%20X." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="OPPO Find X" data-image="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="images/oppo-reno.jpg"" alt="OPPO Reno"></div><h4>OPPO Reno</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Photo & design</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20OPPO%20Reno." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="OPPO Reno" data-image="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="google">
+      <div class="brand-title"><h3>🔵 Google Pixel</h3><span>Pixel Series</span></div>
+      <div class="brand-models"><button type="button" class="model-chip" data-model="Pixel 10">Pixel 10</button><button type="button" class="model-chip" data-model="Pixel 9">Pixel 9</button><button type="button" class="model-chip" data-model="Pixel 8">Pixel 8</button><button type="button" class="model-chip" data-model="Pixel 7">Pixel 7</button></div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="images/google-pixel.jpg"" alt="Google Pixel"></div><h4>Google Pixel — série</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Pixel • plusieurs générations</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20Google%20Pixel." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Google Pixel — série" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <div class="brand-block" data-brand-section="accessoires" style="margin-top:42px">
+      <div class="brand-title"><span>🎧</span> Accessoires PROSEN</div>
+      <p class="section-sub">Choisissez par catégorie, comme pour les smartphones.</p>
+      <div class="brand-models">
+        <button type="button" class="model-chip" data-model="Écouteurs Bluetooth">Écouteurs</button>
+        <button type="button" class="model-chip" data-model="Chargeur rapide">Chargeurs</button>
+        <button type="button" class="model-chip" data-model="Power Bank">Power Banks</button>
+        <button type="button" class="model-chip" data-model="Câble USB-C">Câbles</button>
+        <button type="button" class="model-chip" data-model="Coques téléphone">Coques</button>
+        <button type="button" class="model-chip" data-model="Verre trempé">Protections</button>
+        <button type="button" class="model-chip" data-model="Montre connectée">Montres</button>
+        <button type="button" class="model-chip" data-model="Enceinte Bluetooth">Enceintes</button>
+        <button type="button" class="model-chip" data-model="Support voiture">Auto</button>
+        <button type="button" class="model-chip" data-model="Accessoires gaming">Gaming</button>
+      </div>
+      <div class="brand-products">
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/ecouteurs.jpg" alt="Écouteurs Bluetooth"></div><h4>Écouteurs Bluetooth</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Bluetooth • sans fil</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20des%20%C3%A9couteurs%20Bluetooth." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Écouteurs Bluetooth" data-image="prosen_accessoires/ecouteurs.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/chargeur-rapide.jpg" alt="Chargeur rapide"></div><h4>Chargeur rapide</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">USB-C • charge rapide</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20chargeur%20rapide." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Chargeur rapide" data-image="prosen_accessoires/chargeur-rapide.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/powerbank.jpg" alt="Power Bank"></div><h4>Power Bank</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Batterie externe • plusieurs capacités</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20une%20Power%20Bank." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Power Bank" data-image="prosen_accessoires/powerbank.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/cable-usbc.jpg" alt="Câble USB-C"></div><h4>Câble USB-C</h4><div class="stock">● En stock selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">USB-C • recharge et données</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20c%C3%A2ble%20USB-C." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Câble USB-C" data-image="prosen_accessoires/cable-usbc.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/coques.jpg" alt="Coques téléphone"></div><h4>Coques téléphone</h4><div class="stock">● Plusieurs modèles</div><div class="price">Prix sur demande</div><div class="brand-note">iPhone • Samsung • Xiaomi • autres</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20une%20coque%20de%20t%C3%A9l%C3%A9phone." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Coques téléphone" data-image="prosen_accessoires/coques.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/verre-trempe.jpg" alt="Verre trempé"></div><h4>Verre trempé</h4><div class="stock">● Plusieurs modèles</div><div class="price">Prix sur demande</div><div class="brand-note">Protection écran • 9H</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20verre%20tremp%C3%A9." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Verre trempé" data-image="prosen_accessoires/verre-trempe.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/montre-connectee.jpg" alt="Montre connectée"></div><h4>Montre connectée</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Smartwatch • plusieurs modèles</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20une%20montre%20connect%C3%A9e." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Montre connectée" data-image="prosen_accessoires/montre-connectee.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/enceinte-bluetooth.jpg" alt="Enceinte Bluetooth"></div><h4>Enceinte Bluetooth</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Portable • Bluetooth</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20une%20enceinte%20Bluetooth." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Enceinte Bluetooth" data-image="prosen_accessoires/enceinte-bluetooth.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/support-voiture.jpg" alt="Support voiture"></div><h4>Support voiture</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Support téléphone • voiture</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%2C%20je%20cherche%20un%20support%20t%C3%A9l%C3%A9phone%20voiture." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Support voiture" data-image="prosen_accessoires/support-voiture.jpg">🛒 Ajouter au panier</button></article>
+        <article class="brand-card"><div class="product-img"><img src="prosen_accessoires/gaming.jpg" alt="Accessoires gaming"></div><h4>Accessoires gaming</h4><div class="stock">● Selon arrivage</div><div class="price">Prix sur demande</div><div class="brand-note">Gaming mobile • manettes et accessoires</div><a class="btn btn-primary whatsapp-btn" href="https://wa.me/221707044755?text=Bonjour%20PROSEN%2C%20je%20cherche%20des%20accessoires%20gaming." target="_blank" rel="noopener">WhatsApp</a><button type="button" class="add-cart" data-product="Accessoires gaming" data-image="prosen_accessoires/gaming.jpg">🛒 Ajouter au panier</button></article>
+      </div>
+    </div>
+
+    <p class="brand-note" style="margin-top:28px">
+      Les modèles affichés dans le catalogue servent de sélection de gamme. Les disponibilités et prix peuvent varier selon les arrivages. Contactez PROSEN sur WhatsApp pour confirmer le modèle, la capacité, la couleur et le prix.
+    </p>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const buttons = document.querySelectorAll('.brand-filter');
+  const sections = document.querySelectorAll('[data-brand-section]');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const brand = btn.dataset.brand;
+      sections.forEach(section => {
+        section.style.display = (brand === 'all' || section.dataset.brandSection === brand) ? '' : 'none';
+      });
+      document.getElementById('produits').scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+});
+</script>
+
+<div class="sale" id="promotions">
+
+          <div>
+            <div class="section-kicker" style="color:var(--yellow)">Offres spéciales</div>
+            <h3>Jusqu'à <span>-50%</span></h3>
+            <p>sur une sélection de produits</p>
+          </div>
+          <div class="countdown">
+            <div class="count"><strong>02</strong><small>JOURS</small></div>
+            <div class="count"><strong>14</strong><small>HEURES</small></div>
+            <div class="count"><strong>37</strong><small>MINUTES</small></div>
+            <div class="count"><strong>12</strong><small>SECONDES</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="section-inner">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Pourquoi choisir PROSEN ?</div>
+            <h2 class="section-title">Nos services</h2>
+          </div>
+        </div>
+
+        <div class="services">
+          <div class="service"><div class="service-icon">📱</div><div><h4>Vente de smartphones</h4><p>Toutes marques, tous modèles</p></div></div>
+          <div class="service"><div class="service-icon">🎧</div><div><h4>Accessoires</h4><p>Coques, écouteurs, chargeurs...</p></div></div>
+          <div class="service"><div class="service-icon">🏆</div><div><h4>Conseil personnalisé</h4><p>Notre équipe vous guide</p></div></div>
+          <div class="service"><div class="service-icon">🚚</div><div><h4>Livraison rapide</h4><p>Partout au Sénégal</p></div></div>
+          <div class="service"><div class="service-icon">🛡️</div><div><h4>Assistance après-vente</h4><p>Votre satisfaction, notre priorité</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <div class="contact-inner">
+        <div>
+          <h3>Besoin d'un conseil ou d'une commande ?</h3>
+          <p>Contactez PROSEN directement sur WhatsApp.</p>
+        </div>
+        <div class="numbers">
+          <span>📱 78 950 42 42</span>
+          <span>📱 70 704 47 55</span>
+          <a class="btn btn-primary" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%20Boutique%20%F0%9F%91%8B" target="_blank" rel="noopener">💬 Nous écrire</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Panier">
+  <div class="cart-head"><h3>🛒 Mon panier</h3><button class="cart-close" id="closeCart" aria-label="Fermer">×</button></div>
+  <div class="cart-items" id="cartItems"><div class="cart-empty">Votre panier est vide.</div></div>
+  <div class="cart-foot"><div class="cart-total"><span>Total</span><span>Prix sur demande</span></div><button class="btn btn-primary whatsapp-btn" id="orderCart" style="width:100%;border:0;cursor:pointer">💬 Commander sur WhatsApp</button></div>
+</aside>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">PRO<span>SEN</span> Boutique</div>
+        <p>Votre partenaire de confiance en smartphones et accessoires au Sénégal.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Liens rapides</h4>
+        <a href="#accueil">Accueil</a>
+        <a href="#produits">Produits</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Informations</h4>
+        <a href="#">À propos de nous</a>
+        <a href="#">Livraison & retours</a>
+        <a href="#">Conditions générales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Contact PROSEN</h4>
+        <p>📱 78 950 42 42</p>
+        <p>📱 70 704 47 55</p>
+        <p>🇸🇳 Sénégal</p>
+        <a class="whatsapp-btn" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%20Boutique%20%F0%9F%91%8B" target="_blank" rel="noopener">💬 Commander sur WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 PROSEN Boutique. Tous droits réservés.</span>
+      <span>Propulsé par PROSEN</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/221789504242?text=Bonjour%20PROSEN%20Boutique%20%F0%9F%91%8B%20Je%20souhaite%20avoir%20des%20informations." target="_blank" rel="noopener" aria-label="Contacter PROSEN sur WhatsApp">💬</a>
+
+  <script>
+    // Petit compteur visuel de démonstration.
+    // À remplacer par une date réelle lorsque les promotions seront définies.
+    const countdown = () => {
+      const boxes = document.querySelectorAll('.count strong');
+      if (!boxes.length) return;
+      const end = Date.now() + (2 * 86400000 + 14 * 3600000 + 37 * 60000 + 12 * 1000);
+      setInterval(() => {
+        let diff = Math.max(0, end - Date.now());
+        const d = Math.floor(diff / 86400000); diff %= 86400000;
+        const h = Math.floor(diff / 3600000); diff %= 3600000;
+        const m = Math.floor(diff / 60000); diff %= 60000;
+        const s = Math.floor(diff / 1000);
+        [d,h,m,s].forEach((v,i) => boxes[i].textContent = String(v).padStart(2,'0'));
+      }, 1000);
+    };
+    countdown();
+  </script>
+
+<style>
+  .model-chip{cursor:pointer;border:0;font:inherit;transition:.2s}.model-chip:hover{transform:translateY(-2px)}
+  .brand-card h4{cursor:pointer}.brand-card.is-selected{outline:3px solid #f5c400;box-shadow:0 0 0 6px rgba(245,196,0,.14)}.model-chip.is-selected{background:#f5c400;color:#111}
+  .search-panel{position:fixed;inset:0;background:rgba(8,12,18,.72);z-index:10001;display:none;padding:90px 18px 24px}.search-panel.open{display:block}.search-box{max-width:760px;margin:0 auto;background:#fff;border-radius:22px;padding:20px;box-shadow:0 25px 70px rgba(0,0,0,.3)}
+  .search-row{display:flex;gap:10px}.search-row input{flex:1;border:1px solid #ddd;border-radius:13px;padding:14px 16px;font-size:16px;outline:none}.search-row input:focus{border-color:#f5c400;box-shadow:0 0 0 4px rgba(245,196,0,.12)}.search-results{margin-top:12px;max-height:55vh;overflow:auto}.search-result{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border-bottom:1px solid #eee}.search-result strong{display:block}.search-result small{color:#777}.search-close{border:0;background:#111;color:#fff;border-radius:12px;padding:12px 15px;cursor:pointer;font-weight:800}
+  .product-modal{position:fixed;inset:0;background:rgba(8,12,18,.72);z-index:10000;display:none;align-items:center;justify-content:center;padding:18px}.product-modal.open{display:flex}.product-dialog{width:min(760px,96vw);background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 25px 80px rgba(0,0,0,.35);position:relative}.product-dialog-grid{display:grid;grid-template-columns:42% 58%}.product-dialog-img{min-height:330px;background:#f5f7fa}.product-dialog-img img{width:100%;height:100%;object-fit:cover}.product-dialog-body{padding:28px}.product-dialog-body h3{font-size:28px;margin:6px 0}.product-dialog-body p{color:#6b7280}.modal-close{position:absolute;right:14px;top:14px;border:0;background:#fff;border-radius:50%;width:40px;height:40px;font-size:24px;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.12);z-index:2}.modal-actions{display:flex;gap:10px;margin-top:20px}.modal-actions button,.modal-actions a{flex:1;text-align:center}.qty{display:inline-flex;align-items:center;border:1px solid #ddd;border-radius:11px;overflow:hidden;margin-top:15px}.qty button{width:38px;height:38px;border:0;background:#f5f5f5;cursor:pointer;font-size:18px}.qty span{min-width:38px;text-align:center;font-weight:800}.cart-item{align-items:center}.cart-item-info .item-line{display:flex;justify-content:space-between;gap:8px;align-items:center}.cart-item-info .item-price{color:#777;font-size:12px}.cart-qty{display:flex;align-items:center;gap:7px;margin-top:7px}.cart-qty button{border:1px solid #ddd;background:#fff;border-radius:7px;width:26px;height:26px;cursor:pointer}.cart-qty span{min-width:18px;text-align:center;font-weight:800}.cart-remove{margin-left:8px}
+  @media(max-width:700px){.product-dialog-grid{grid-template-columns:1fr}.product-dialog-img{height:220px;min-height:0}.product-dialog-body{padding:22px}.modal-actions{flex-direction:column}.search-row{flex-direction:column}}
+</style>
+
+<div class="search-panel" id="searchPanel" aria-hidden="true">
+  <div class="search-box">
+    <div class="search-row"><input id="searchInput" type="search" placeholder="Rechercher un iPhone, Samsung, Xiaomi..." autocomplete="off"><button class="search-close" id="closeSearch">Fermer</button></div>
+    <div class="search-results" id="searchResults"><p style="padding:20px;color:#777">Tapez le nom d’un produit.</p></div>
+  </div>
+</div>
+
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-dialog">
+    <button class="modal-close" id="closeProduct" aria-label="Fermer">×</button>
+    <div class="product-dialog-grid">
+      <div class="product-dialog-img"><img id="modalImage" src="images/prosen-cover.jpg" alt="Produit PROSEN"></div>
+      <div class="product-dialog-body">
+        <div class="section-kicker">PROSEN Boutique</div><h3 id="modalName"></h3>
+        <p id="modalInfo">Disponible selon arrivage. Prix et capacité à confirmer avec PROSEN.</p>
+        <div class="qty"><button id="modalMinus">−</button><span id="modalQty">1</span><button id="modalPlus">+</button></div>
+        <div class="modal-actions"><button class="btn btn-primary" id="modalAdd">🛒 Ajouter au panier</button><a class="btn btn-outline" id="modalWhatsApp" href="#" target="_blank" rel="noopener">💬 WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const nums=['221789504242','221707044755']; let numIndex=0;
+  const wa=(name,qty=1)=>{const n=nums[numIndex++%nums.length]; const t=`Bonjour PROSEN, je souhaite des informations sur ${name}${qty>1?` (quantité : ${qty})`:''}.`; return `https://wa.me/${n}?text=${encodeURIComponent(t)}`};
+  const drawer=document.getElementById('cartDrawer'), overlay=document.getElementById('cartOverlay'), itemsEl=document.getElementById('cartItems'), countEl=document.getElementById('cartCount');
+  const openCart=()=>{drawer.classList.add('open');overlay.classList.add('open')}; const closeCart=()=>{drawer.classList.remove('open');overlay.classList.remove('open')};
+  document.getElementById('openCart')?.addEventListener('click',openCart); document.getElementById('closeCart')?.addEventListener('click',closeCart); overlay?.addEventListener('click',closeCart);
+  let cart=[]; try{cart=JSON.parse(localStorage.getItem('prosenCart')||'[]')}catch(e){cart=[]}
+  cart=cart.map(p=>({...p,qty:Number(p.qty)||1}));
+  const save=()=>{localStorage.setItem('prosenCart',JSON.stringify(cart));render()};
+  function render(){
+    const totalQty=cart.reduce((s,p)=>s+p.qty,0); countEl.textContent=totalQty;
+    if(!cart.length){itemsEl.innerHTML='<div class="cart-empty">Votre panier est vide.<br>Ajoutez un smartphone pour commencer.</div>';return;}
+    itemsEl.innerHTML=cart.map((p,i)=>`<div class="cart-item"><img src="${p.image}" alt="${p.name}"><div class="cart-item-info"><div class="item-line"><strong>${p.name}</strong><button class="cart-remove" data-remove="${i}">Supprimer</button></div><span class="item-price">Prix sur demande</span><div class="cart-qty"><button data-dec="${i}">−</button><span>${p.qty}</span><button data-inc="${i}">+</button></div></div></div>`).join('');
+    itemsEl.querySelectorAll('[data-remove]').forEach(b=>b.onclick=()=>{cart.splice(+b.dataset.remove,1);save()}); itemsEl.querySelectorAll('[data-inc]').forEach(b=>b.onclick=()=>{cart[+b.dataset.inc].qty++;save()}); itemsEl.querySelectorAll('[data-dec]').forEach(b=>b.onclick=()=>{const i=+b.dataset.dec;cart[i].qty--;if(cart[i].qty<=0)cart.splice(i,1);save()});
+  }
+  document.querySelectorAll('.add-cart').forEach(btn=>btn.addEventListener('click',()=>{const name=btn.dataset.product,image=btn.dataset.image;const found=cart.find(p=>p.name===name);if(found)found.qty++;else cart.push({name,image,qty:1});save();openCart()}));
+  document.getElementById('orderCart')?.addEventListener('click',()=>{if(!cart.length){alert('Votre panier est vide.');return;}const text='Bonjour PROSEN, je souhaite commander :\n'+cart.map((p,i)=>`${i+1}. ${p.name} — quantité ${p.qty}`).join('\n');window.open(`https://wa.me/${nums[0]}?text=${encodeURIComponent(text)}`,'_blank','noopener')});
+
+  const modal=document.getElementById('productModal'), mImg=document.getElementById('modalImage'), mName=document.getElementById('modalName'), mQty=document.getElementById('modalQty'), mWa=document.getElementById('modalWhatsApp'); let active={name:'',image:''}, qty=1;
+  function showProduct(card){active={name:card.querySelector('h4')?.textContent.trim()||'Produit PROSEN',image:card.querySelector('img')?.src||''};qty=1;mName.textContent=active.name;mImg.src=active.image;mImg.alt=active.name;mQty.textContent=qty;mWa.href=wa(active.name,qty);modal.classList.add('open');modal.setAttribute('aria-hidden','false')}
+  const hideProduct=()=>{modal.classList.remove('open');modal.setAttribute('aria-hidden','true')};
+  document.querySelectorAll('.brand-card').forEach(card=>{card.addEventListener('click',e=>{if(e.target.closest('.add-cart,.whatsapp-btn,a'))return;document.querySelectorAll('.brand-card').forEach(c=>c.classList.remove('is-selected'));card.classList.add('is-selected');showProduct(card)});});
+  document.querySelectorAll('.model-chip').forEach(chip=>chip.addEventListener('click',()=>{const model=chip.dataset.model||chip.textContent.trim();document.querySelectorAll('.model-chip').forEach(c=>c.classList.remove('is-selected'));chip.classList.add('is-selected');const card=[...document.querySelectorAll('.brand-card')].find(c=>c.querySelector('h4')?.textContent.trim().toLowerCase()===model.toLowerCase());if(card){card.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>showProduct(card),350)}else{window.open(wa(model),'_blank','noopener')}}));
+  document.getElementById('closeProduct').onclick=hideProduct;modal.addEventListener('click',e=>{if(e.target===modal)hideProduct});document.addEventListener('keydown',e=>{if(e.key==='Escape'){hideProduct();closeCart();document.getElementById('searchPanel').classList.remove('open')}});
+  document.getElementById('modalMinus').onclick=()=>{qty=Math.max(1,qty-1);mQty.textContent=qty;mWa.href=wa(active.name,qty)};document.getElementById('modalPlus').onclick=()=>{qty++;mQty.textContent=qty;mWa.href=wa(active.name,qty)};
+  document.getElementById('modalAdd').onclick=()=>{const found=cart.find(p=>p.name===active.name);if(found)found.qty+=qty;else cart.push({name:active.name,image:active.image,qty});save();hideProduct();openCart()};
+
+  const searchPanel=document.getElementById('searchPanel'), searchInput=document.getElementById('searchInput'), searchResults=document.getElementById('searchResults');
+  const products=[...document.querySelectorAll('.brand-card')].map(card=>({card,name:card.querySelector('h4')?.textContent.trim()||'',brand:card.closest('.brand-block')?.querySelector('.brand-title')?.textContent.trim()||''}));
+  function doSearch(){const q=searchInput.value.trim().toLowerCase();const matches=products.filter(p=>(p.name+' '+p.brand).toLowerCase().includes(q)).slice(0,12);searchResults.innerHTML=q?(matches.length?matches.map((p,i)=>`<button class="search-result" data-result="${i}" style="width:100%;background:#fff;border:0;text-align:left;cursor:pointer"><span><strong>${p.name}</strong><small>${p.brand}</small></span><span>→</span></button>`).join(''):'<p style="padding:20px;color:#777">Aucun produit trouvé.</p>'):'<p style="padding:20px;color:#777">Tapez le nom d’un produit.</p>';searchResults.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>{const p=matches[+b.dataset.result];searchPanel.classList.remove('open');p.card.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(()=>showProduct(p.card),350)})}
+  const openSearch=()=>{searchPanel.classList.add("open");searchPanel.setAttribute("aria-hidden","false");setTimeout(()=>searchInput.focus(),50);doSearch()}; const closeSearch=()=>{searchPanel.classList.remove("open");searchPanel.setAttribute("aria-hidden","true")}; document.getElementById("searchBtn")?.addEventListener("click",openSearch); document.getElementById("closeSearch")?.addEventListener("click",closeSearch); searchPanel.addEventListener("click",e=>{if(e.target===searchPanel)closeSearch()}); searchInput.addEventListener("input",doSearch); searchInput.addEventListener("keydown",e=>{if(e.key==="Escape")closeSearch()});
+  render();
+  document.querySelectorAll('img').forEach(img=>{
+    img.addEventListener('error',()=>{
+      if(img.dataset.fallbackApplied) return;
+      img.dataset.fallbackApplied='1';
+      img.src='images/prosen-cover.jpg';
+    });
+  });
+});
+</script>
+
+</body>
+</html>
